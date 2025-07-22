@@ -804,7 +804,7 @@ class _AssetToolPageState extends State<AssetToolPage> {
                                   });
                                 },
                               ),
-                              Text(localizations.enableImageResize),
+                              Text('${localizations.enableImageResize} (${localizations.autoGenerateInfo})'),
                             ],
                           ),
                           
@@ -847,11 +847,6 @@ class _AssetToolPageState extends State<AssetToolPage> {
                                 ),
                               ],
                             ),
-                            const SizedBox(height: 8),
-                            Text(
-                               localizations.autoGenerateInfo,
-                               style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
-                             ),
                           ],
                         ],
                       ),
