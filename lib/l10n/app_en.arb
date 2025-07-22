@@ -1,0 +1,190 @@
+{
+  "appTitle": "Flutter Assets Tool",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "workspaceDirectory": "Workspace Directory:",
+  "@workspaceDirectory": {
+    "description": "Label for workspace directory"
+  },
+  "noWorkspaceSelected": "No workspace selected",
+  "@noWorkspaceSelected": {
+    "description": "Text when no workspace is selected"
+  },
+  "selectWorkspaceDirectory": "Select Workspace Directory",
+  "@selectWorkspaceDirectory": {
+    "description": "Button text for selecting workspace directory"
+  },
+  "recentlyUsed": "Recently Used:",
+  "@recentlyUsed": {
+    "description": "Label for recently used workspaces"
+  },
+  "imageStorageDirectory": "Image Storage Directory:",
+  "@imageStorageDirectory": {
+    "description": "Label for image storage directory"
+  },
+  "imageStorageDirectoryHint": "assets/images/",
+  "@imageStorageDirectoryHint": {
+    "description": "Hint text for image storage directory"
+  },
+  "selectImage": "Select Image:",
+  "@selectImage": {
+    "description": "Label for image selection"
+  },
+  "pickImage": "Pick Image",
+  "@pickImage": {
+    "description": "Button text for picking image"
+  },
+  "originalFileName": "Original File Name",
+  "@originalFileName": {
+    "description": "Label for original file name"
+  },
+  "resolution": "Resolution",
+  "@resolution": {
+    "description": "Label for image resolution"
+  },
+  "filePath": "File Path",
+  "@filePath": {
+    "description": "Label for file path"
+  },
+  "image2x": "2x Image",
+  "@image2x": {
+    "description": "Label for 2x image"
+  },
+  "image3x": "3x Image",
+  "@image3x": {
+    "description": "Label for 3x image"
+  },
+  "importSettings": "Import Settings:",
+  "@importSettings": {
+    "description": "Label for import settings"
+  },
+  "imageName": "Image Name",
+  "@imageName": {
+    "description": "Label for image name input"
+  },
+  "imageNameHint": "e.g.: img_icon.png",
+  "@imageNameHint": {
+    "description": "Hint text for image name input"
+  },
+  "enableImageResize": "Enable Image Resize",
+  "@enableImageResize": {
+    "description": "Label for enable image resize checkbox"
+  },
+  "targetResolution": "Target Resolution:",
+  "@targetResolution": {
+    "description": "Label for target resolution"
+  },
+  "width": "Width",
+  "@width": {
+    "description": "Label for width input"
+  },
+  "height": "Height",
+  "@height": {
+    "description": "Label for height input"
+  },
+  "widthHint": "40",
+  "@widthHint": {
+    "description": "Hint text for width input"
+  },
+  "heightHint": "40",
+  "@heightHint": {
+    "description": "Hint text for height input"
+  },
+  "autoGenerateInfo": "Will auto generate: 2x image, 3x image",
+  "@autoGenerateInfo": {
+    "description": "Text showing auto generation info"
+  },
+  "resourceClassName": "Resource Class Name",
+  "@resourceClassName": {
+    "description": "Label for resource class name input"
+  },
+  "resourceClassNameHint": "e.g.: ImgR",
+  "@resourceClassNameHint": {
+    "description": "Hint text for resource class name input"
+  },
+  "selectFile": "Select File",
+  "@selectFile": {
+    "description": "Button text for selecting file"
+  },
+  "addToProject": "Add to Project",
+  "@addToProject": {
+    "description": "Button text for adding to project"
+  },
+  "success": "Success",
+  "@success": {
+    "description": "Success message title"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error message title"
+  },
+  "imageAddedSuccessfully": "Image added to project successfully!",
+  "@imageAddedSuccessfully": {
+    "description": "Success message for image addition"
+  },
+  "pleaseSelectWorkspace": "Please select workspace directory first",
+  "@pleaseSelectWorkspace": {
+    "description": "Error message when workspace not selected"
+  },
+  "pleaseSelectImage": "Please select image first",
+  "@pleaseSelectImage": {
+    "description": "Error message when image not selected"
+  },
+  "pleaseEnterImageName": "Please enter image name",
+  "@pleaseEnterImageName": {
+    "description": "Error message when image name not entered"
+  },
+  "addFailed": "Add failed",
+  "@addFailed": {
+    "description": "Error message when add operation fails"
+  },
+  "checkImageInfoError": "Error checking image info",
+  "@checkImageInfoError": {
+    "description": "Error message when checking image info fails"
+  },
+  "cannotParseImageFile": "Cannot parse image file",
+  "@cannotParseImageFile": {
+    "description": "Error message when image file cannot be parsed"
+  },
+  "imageAlreadyExists": "Image already exists in pubspec.yaml",
+  "@imageAlreadyExists": {
+    "description": "Error message when image already exists"
+  },
+  "flutterNodeNotFound": "Flutter node not found",
+  "@flutterNodeNotFound": {
+    "description": "Error message when flutter node not found"
+  },
+  "variableAlreadyExists": "Variable already exists in file",
+  "@variableAlreadyExists": {
+    "description": "Error message when variable already exists"
+  },
+  "selectedResourceClass": "Selected resource class",
+  "@selectedResourceClass": {
+    "description": "Label for selected resource class"
+  },
+  "cannotFindClassDefinition": "Cannot find class definition from file",
+  "@cannotFindClassDefinition": {
+    "description": "Error message when class definition cannot be found"
+  },
+  "readFileFailed": "Read file failed",
+  "@readFileFailed": {
+    "description": "Error message when file reading fails"
+  },
+  "pleaseSelectWorkspaceFirst": "Please select workspace directory first",
+  "@pleaseSelectWorkspaceFirst": {
+    "description": "Error message when workspace not selected first"
+  },
+  "inFile": " in file ",
+  "@inFile": {
+    "description": "Text for 'in file'"
+  },
+  "inFileEnd": "",
+  "@inFileEnd": {
+    "description": "Text for end of 'in file' message"
+  },
+  "fileFormatIncorrect": " file format is incorrect",
+  "@fileFormatIncorrect": {
+    "description": "Error message when file format is incorrect"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "appTitle": "Flutter Assets Tool",
+  "workspaceDirectory": "工作目录:",
+  "noWorkspaceSelected": "未选择工作目录",
+  "selectWorkspaceDirectory": "选择工作目录",
+  "recentlyUsed": "最近使用:",
+  "imageStorageDirectory": "图片存放目录:",
+  "imageStorageDirectoryHint": "assets/images/",
+  "selectImage": "选择图片:",
+  "pickImage": "挑选图片",
+  "originalFileName": "原始文件名",
+  "resolution": "分辨率",
+  "filePath": "文件路径",
+  "image2x": "2倍图",
+  "image3x": "3倍图",
+  "importSettings": "导入设置:",
+  "imageName": "图片名称",
+  "imageNameHint": "例如: img_icon.png",
+  "enableImageResize": "启用图片缩放功能",
+  "targetResolution": "目标分辨率:",
+  "width": "宽度",
+  "height": "高度",
+  "widthHint": "40",
+  "heightHint": "40",
+  "autoGenerateInfo": "将自动生成: 2倍图, 3倍图",
+  "resourceClassName": "资源类名",
+  "resourceClassNameHint": "例如: ImgR",
+  "selectFile": "选择文件",
+  "addToProject": "添加到工程",
+  "success": "成功",
+  "error": "错误",
+  "imageAddedSuccessfully": "图片已成功添加到工程！",
+  "pleaseSelectWorkspace": "请先选择工作目录",
+  "pleaseSelectImage": "请先选择图片",
+  "pleaseEnterImageName": "请输入图片名称",
+  "addFailed": "添加失败",
+  "checkImageInfoError": "检查图片信息时出错",
+  "cannotParseImageFile": "无法解析图片文件",
+  "imageAlreadyExists": "图片已存在于pubspec.yaml中",
+  "flutterNodeNotFound": "找不到flutter节点",
+  "variableAlreadyExists": "变量已存在于文件中",
+  "selectedResourceClass": "已选择资源类",
+  "cannotFindClassDefinition": "无法从文件中找到类定义",
+  "readFileFailed": "读取文件失败",
+  "@readFileFailed": {
+    "description": "Error message when file reading fails"
+  },
+  "pleaseSelectWorkspaceFirst": "请先选择工作目录",
+  "@pleaseSelectWorkspaceFirst": {
+    "description": "Error message when workspace not selected first"
+  },
+  "inFile": "已存在于",
+  "@inFile": {
+    "description": "Text for 'in file'"
+  },
+  "inFileEnd": "中",
+  "@inFileEnd": {
+    "description": "Text for end of 'in file' message"
+  },
+  "fileFormatIncorrect": "文件格式不正确",
+  "@fileFormatIncorrect": {
+    "description": "Error message when file format is incorrect"
+  }
+}
