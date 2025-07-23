@@ -150,4 +150,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get fileFormatIncorrect => ' file format is incorrect';
+
+  @override
+  String get assetOverwriteTitle => 'Asset Already Exists';
+
+  @override
+  String get assetOverwriteMessage =>
+      'The asset already exists in pubspec.yaml. Do you want to overwrite it?';
+
+  @override
+  String get overwrite => 'Overwrite';
+
+  @override
+  String get cancel => 'Cancel';
 }

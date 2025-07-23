@@ -186,5 +186,21 @@
   "fileFormatIncorrect": " file format is incorrect",
   "@fileFormatIncorrect": {
     "description": "Error message when file format is incorrect"
+  },
+  "assetOverwriteTitle": "Asset Already Exists",
+  "@assetOverwriteTitle": {
+    "description": "Title for asset overwrite confirmation dialog"
+  },
+  "assetOverwriteMessage": "The asset already exists in pubspec.yaml. Do you want to overwrite it?",
+  "@assetOverwriteMessage": {
+    "description": "Message for asset overwrite confirmation dialog"
+  },
+  "overwrite": "Overwrite",
+  "@overwrite": {
+    "description": "Button text for overwrite confirmation"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Button text for cancel operation"
   }
 }

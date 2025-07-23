@@ -367,9 +367,45 @@ class _AssetToolPageState extends State<AssetToolPage> {
     String asset2xPath = '${_assetsDirectory}2.0x/$_newImageName';
     String asset3xPath = '${_assetsDirectory}3.0x/$_newImageName';
 
+    bool skip = false;
+    bool skip2x = false;
+    bool skip3x = false;
     // 检查是否已存在
     if (content.contains('- $assetPath')) {
-      throw Exception('${localizations.imageAlreadyExists}: $assetPath');
+      // 显示确认对话框
+      bool? overwrite = await showDialog<bool>(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text(localizations.assetOverwriteTitle),
+            content: Text(localizations.assetOverwriteMessage),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop(false); // 取消
+                },
+                child: Text(localizations.cancel),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop(true); // 覆盖
+                },
+                child: Text(localizations.overwrite),
+              ),
+            ],
+          );
+        },
+      );
+      
+      // 如果用户选择取消，则抛出异常
+      if (overwrite != true) {
+        throw Exception('${localizations.imageAlreadyExists}: $assetPath');
+      }
+      // 否则继续执行，覆盖现有资源
+      skip = true;
+
+      skip2x = content.contains('- $asset2xPath');
+      skip3x = content.contains('- $asset3xPath');
     }
 
     if (assetsIndex == -1) {
@@ -388,11 +424,16 @@ class _AssetToolPageState extends State<AssetToolPage> {
 
       // 在flutter节点下添加assets
       lines.insert(flutterIndex + 2, '  assets:');
-      lines.insert(flutterIndex + 3, '    - $assetPath');
-      if (_has2xImage) {
+
+      // 已存在不写入
+      if (!skip) {
+        lines.insert(flutterIndex + 3, '    - $assetPath');
+      }
+
+      if (_has2xImage && !skip2x) {
         lines.insert(flutterIndex + 4, '    - $asset2xPath');
       }
-      if (_has3xImage) {
+      if (_has3xImage && !skip3x) {
         lines.insert(flutterIndex + (_has2xImage ? 5 : 4), '    - $asset3xPath');
       }
     } else {
@@ -402,12 +443,15 @@ class _AssetToolPageState extends State<AssetToolPage> {
              (lines[insertIndex].startsWith('    -') || lines[insertIndex].trim().isEmpty)) {
         insertIndex++;
       }
-      
-      lines.insert(insertIndex, '    - $assetPath');
-      if (_has2xImage) {
+
+      if (!skip) {
+        lines.insert(insertIndex, '    - $assetPath');
+      }
+
+      if (_has2xImage && !skip2x) {
         lines.insert(insertIndex + 1, '    - $asset2xPath');
       }
-      if (_has3xImage) {
+      if (_has3xImage && !skip3x) {
         lines.insert(insertIndex + (_has2xImage ? 2 : 1), '    - $asset3xPath');
       }
     }
@@ -446,7 +490,7 @@ class _AssetToolPageState extends State<AssetToolPage> {
       
       // 检查是否已存在该变量
       if (content.contains('static const String $variableName')) {
-        throw Exception('${localizations.variableAlreadyExists} $variableName ${localizations.inFile}${path.basename(classFilePath)}${localizations.inFileEnd}');
+        return;
       }
       
       // 在类的最后一个}前添加新的静态变量

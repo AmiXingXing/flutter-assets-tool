@@ -379,6 +379,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **' file format is incorrect'**
   String get fileFormatIncorrect;
+
+  /// Title for asset overwrite confirmation dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Asset Already Exists'**
+  String get assetOverwriteTitle;
+
+  /// Message for asset overwrite confirmation dialog
+  ///
+  /// In en, this message translates to:
+  /// **'The asset already exists in pubspec.yaml. Do you want to overwrite it?'**
+  String get assetOverwriteMessage;
+
+  /// Button text for overwrite confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Overwrite'**
+  String get overwrite;
+
+  /// Button text for cancel operation
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
 }
 
 class _AppLocalizationsDelegate

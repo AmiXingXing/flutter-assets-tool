@@ -148,4 +148,16 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get fileFormatIncorrect => '文件格式不正确';
+
+  @override
+  String get assetOverwriteTitle => '资源已存在';
+
+  @override
+  String get assetOverwriteMessage => '该资源已存在于pubspec.yaml中。是否要覆盖它？';
+
+  @override
+  String get overwrite => '覆盖';
+
+  @override
+  String get cancel => '取消';
 }
